@@ -3,6 +3,7 @@ import { Container, Grid, Typography } from '@mui/material';
 import Formulario from './components/Formulario';
 import { NoticiasProvider } from './context/NoticiasProvider';
 import ListadoNoticias from './components/ListadoNoticias';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         </Grid>
         <ListadoNoticias/>
       </Container>
+      <Footer/>
     </NoticiasProvider>
   )
 }

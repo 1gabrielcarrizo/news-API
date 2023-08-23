@@ -21,7 +21,7 @@ const Noticia = ({ noticia }) => {
                     <Typography variant='body1' color="error" >
                         {source.name}
                     </Typography>
-                    <Typography variant='h5' component="div" >
+                    <Typography variant='h5' component="div">
                         {title}
                     </Typography>
                     <Typography variant='body2' >
