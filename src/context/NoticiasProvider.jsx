@@ -15,7 +15,6 @@ const NoticiasProvider = ({ children }) => {
                 // nos trae por defecto 20, para mostrar todo escribimos "pageSize=100", si lo eliminamos podemos escribir "page=2"
                 const url = `https://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&pageSize=100&apiKey=${import.meta.env.VITE_API_KEY}`
                 const { data } = await axios(url)
-                console.log(data.articles)
                 setNoticias(data.articles)
             } catch (error) {
                 console.error(error)
@@ -33,7 +32,8 @@ const NoticiasProvider = ({ children }) => {
         <NoticiasContext.Provider
             value={{
                 categoria,
-                handleChangeCategoria
+                handleChangeCategoria,
+                noticias
             }}
         >
             {children}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormControl, InputLabel, Select, MenuItem, Button, Box } from '@mui/material';
+import { FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import useNoticias from '../hooks/useNoticias';
 
 const categorias = [ // no se puede agregar mas categorias, esto es lo que soporta la API de material UI
@@ -28,9 +28,6 @@ const Formulario = () => {
                         </MenuItem>
                     ))}
                 </Select>
-                <Box sx={{ marginTop: 2 }}>
-                    <Button fullWidth variant='contained'>Buscar noticias</Button>
-                </Box>
             </FormControl>
         </form>
     )
